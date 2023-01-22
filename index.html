@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png">
+    <title>SiUG</title>
+</head>
+<body id="container">
+    <div id="flex-container">
+        <!--Cabercera sera una caja flex-->
+        <header id="cabecera">
+            <div class="banner">
+                <div><img src="logo.png" width="150" alt="Logo de la Universidad de Guayaquil"></div>
+            </div>
+            <div class="flex-cab">
+                <div class="title"><h1>Sistema Integrado de la Universidad de Guayaquil - "SIUG"</h1></div>
+                <div class="fecha">
+                    <p>Viernes, 20 de enero del 2023</p>
+                    <a href="#">Ultimos Accesos</a>
+                </div>
+                <div class="sesion"><a href="#">Iniciar Sesión</a></div>
+            </div>
+        </header>
+        <!--Navegacion sera una caja flex-->
+        <nav id="navegacion">
+            <ul class="opciones">
+                <li><a href="">Página principal</a></li>
+                <li><a href="">Académico</a>
+                    <ul class="subopciones">
+                        <li><a href="">Estudiante</a></li>
+                        <li><a href="">Docente</a></li>
+                        <li><a href="">Titulación</a></li>
+                        <li><a href="">Datos personales censo</a></li>
+                        <li><a href="">Unidad Académica</a></li>
+                        <li><a href="">Biblioteca Virtual</a></li>
+                        <li><a href="">Consulta gerencial</a></li>
+                        <li><a href="">Procesos solicitud</a></li>
+                        <li><a href="">Nivelación</a></li>
+                        <li><a href="">Registro</a></li>
+                        <li><a href="">Registro Homologación</a></li>
+                        <li><a href="">Ayudas Económicas</a></li>
+                        <li><a href="">Bienestar Estudiantíl</a></li>
+                        <li><a href="">VIFAP_Evaluación</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Financiero</a>
+                    <ul class="subopciones">
+                        <li><a href="">Recaudaciones</a></li>
+                        <li><a href="">Impuesto 2 x 1000</a></li>
+                        <li><a href="">Autogestión</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Talento humano</a></li>
+                <li><a href="">Consultas públicas</a>
+                    <ul class="subopciones">
+                        <li><a href="">Académico</a></li>
+                        <li><a href="">Administrativo</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Escenarios</a>
+                    <ul class="subopciones">
+                        <li><a href="">Adquisiciones</a></li>
+                        <li><a href="">Activo fijo</a></li>
+                        <li><a href="">Contratos</a></li>
+                        <li><a href="">Centro de servicios</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Ayuda</a>
+                    <ul class="subopciones">
+                        <li><a href="">Cambio de contraseña</a></li>
+                        <li><a href="">Temas de ayuda</a></li>
+                        <li><a href="">Acerca de</a></li>
+                        <li><a href="">Administradores - Informáticos</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Foro</a></li>
+            </ul>
+        </nav>
+        <!--Menu sera una caja flex-->
+        <main id="menu">
+            <section class="campus">
+                <div><a style="padding-bottom: 5px; display: block;" href="http://campusvirtual.ug.edu.ec/"><img class="picture" src="https://moodle.org/theme/moodleorg/pix/moodle_logo_TM.svg" height="42px" alt=""><div class="vid" style="padding-top: 10px;">CAMPUS VIRTUAL</div></a></div>
+            </section>
+            <div class="seccion-main">
+                <section class="info">
+                    <div class="div-info">
+                        <div class="mensaje">
+                            <p><b>La Universidad de Guayaquil</b></p>
+                            <p>Te invita a ver el siguiente video</p>
+                        </div>
+                        <div class="video">
+                            <iframe src="https://mega.nz/embed/5vwDAKwA#uu8Zhv0t4c1tjVE3Ezc2nA3P8fk8vr40u8lDTq-6W4A" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                        </div>
+                    </div>
+                </section>
+                <section class="form">
+                    <div class="div-form">
+                        <div class="mensaje">
+                            <p><b>Ingresar al SIUG</b></p>
+                        </div>
+                        <div class="flex-form">
+                            <form name="formulario" method="get">
+                                <div><input type="text" name="txtuser" id="user" maxlength="10" placeholder="Cédula o Pasaporte"></div>
+                                <div><input type="password" name="txtclave" id="clave" placeholder="Contraseña"></div>
+                                <div><p><b>Día y Mes de nacimiento</b></p></div>
+                                <div>
+                                    <span><input type="text" name="txtdia" id="dia" placeholder="día"><span> - </span></span><span><input type="text" name="txtmes" id="mes" placeholder="mes"></span>
+                                </div>
+                                <div><input class="iniciar-sesion" type="submit" value="Iniciar sesión"></div>
+                                <div class="cuenta"><p>¿No tienes cuenta? REGISTRATE</p></div>
+                                <div><input class="registrarse" type="submit" value="Registrarse"></div>
+                                <div class="recuperar-clave"><a href="#">¿Olvidaste tu constraseña?</a></div>
+                            </form>
+                        </div>
+                    </div>
+                </section>                
+            </div>
+        </main>
+        <!--Footer sera una caja flex-->
+        <footer id="pie-de-pagina">
+            <div>Creado por el Centro de Cómputo</div>
+            <div><small>&copy; 2023. <a class="ref" href="#">Universidad de Guayaquil</a></small></div>
+        </footer>
+    </div>
+</body>
+</html>

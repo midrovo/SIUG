@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    display: flex;
+}
+
+body #flex-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#cabecera {
+    background-color: #01239F;
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1;
+}
+
+#navegacion {
+    background-color: #34495E;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+#menu {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#pie-de-pagina {
+    background-color: #01239F;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    color: #FDFEFE;
+}
+
+.ref {
+    color: #FDFEFE;
+}
+
+.opciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
+}
+
+.opciones > li {
+    text-align: center;
+    display: flex;
+    flex: 1;    
+}
+
+.opciones > li > a {
+    min-width: 150px;
+    padding: 10px;
+    color: #FDFEFE;
+    flex: 1;    
+}
+
+li {
+    border: 1px solid #717D7E;
+}
+
+li:hover {
+    background-color: rgba(23, 32, 42, 0.80);
+}
+
+.banner {
+    background-color: #FDFEFE;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.flex-cab {
+    display: flex;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-cab > div {
+    margin: 10px 0;
+}
+
+.title {
+    flex: 5 1260px;
+    color: #FDFEFE;
+}
+
+.fecha {
+    flex: 3 100px;
+    color: #FDFEFE;
+}
+
+.fecha > p, .fecha > a {
+    margin: 5px 0;
+    color: #FDFEFE;
+}
+
+.sesion {
+    text-align: end;
+    color: #FDFEFE;
+    flex: 1 50px;
+}
+
+.sesion > a {
+    color: #FDFEFE;
+}
+
+.campus {
+    padding: 20px;
+    align-self: center;
+    text-align: center;
+}
+
+.seccion-main {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex: 1;
+}
+
+.info, .form {
+    margin: 5px;
+    flex: 1 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.div-info, .div-form {
+    min-width: 460px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #B2BABB;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;  
+}
+
+.mensaje {
+    padding: 10px;
+    background-color: #B2BABB;
+    text-align: center;
+    border-top-left-radius: 8.5px;
+    border-top-right-radius: 8.5px;
+}
+
+.video {
+    display: flex;
+    flex: 1 300px;
+}
+
+iframe {
+    margin: 5px;
+    flex: 1;
+}
+
+.flex-form {
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-form > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form > div {
+    margin: 5px 0;
+}
+
+#user, #clave {
+    padding: 10px;
+    border: 1px solid #B2BABB;
+    border-radius: 5px;
+    width: 350px;
+    height: 30px;
+}
+
+#dia, #mes {
+    border: 1px solid #B2BABB;
+    border-radius: 5px;
+    text-align: center;
+    width: 50px;
+    height: 30px;
+}
+
+.iniciar-sesion, .registrarse {
+    padding: 10px;
+    background-color: #01239F;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 350px;
+    color: #FDFEFE;
+}
+
+.recuperar-clave {
+    align-self: flex-start;
+}
+
+.recuperar-clave a {
+    color:#01239F;;
+}
+
+.iniciar-sesion:hover, .registrarse:hover {
+    transition: all 1s;
+    background-color: rgba(0, 0, 0, 0.95);
+    cursor: pointer;
+}
+
+.vid {
+    color: blue;
+}
+
+.campus:hover {
+    transition: all 0.9s;
+    transform: scale(1.2);   
+}
+
+.opciones > li {
+    position: relative;
+}
+
+.subopciones {
+    position: absolute;
+    display: none;
+    top: 38.9px;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.subopciones {
+    background-color: #34495E;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.subopciones > li {
+    border: none;
+    display: flex;
+    flex: 1;
+}
+
+.subopciones > li > a {
+    padding: 7px 10px;
+    flex: 1;
+    color: #FDFEFE;
+}
+
+.subopciones > li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.subopciones > li:hover {
+    background-color: rgba(23, 32, 42, 0.80);
+}
+
+.opciones > li:hover .subopciones {
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
